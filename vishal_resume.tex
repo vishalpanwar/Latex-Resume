@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Vishal Panwar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\iffalse
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    textbf=true,
+}
+\fi
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf {\Large Vishal Panwar} & Email : \href{mailto:vpanwar825@gmail.com}{vpanwar825@gmail.com}\\
+  \href{https://www.linkedin.com/in/vishalpanwar/}{https://www.linkedin.com/in/vishalpanwar/} & Mobile : +91-9560729089 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Microsoft}{Hyderabad, India}
+      {Software Engineer}{July 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Azure Application Gateway}
+          {Azure Application Gateway works as a layer 7 loader balancer in Microsoft Azure Public cloud.Involved in development of end to end features on top on top of Nginx in C\# and C++ and its interaction with NRP and Gateway Manager in a large scale distributed systems architecture.
+          \\ Link: \href{https://docs.microsoft.com/en-us/azure/application-gateway/overview}{\custombold{//Azure Application Gateway}}}
+            \resumeItem{Virtual Machine Scale Set Migration \& Autoscaling}
+          {Involved in extensive POCs around the performance of Application Gateway on Linux based VMSS instead of Windows based cloud service on Azure. Later in  migration of service to Linux based VMSS platform as a V2 version with custom Autoscale workflow. 
+          \\ Link: \href{https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview}{\custombold{//Application Gateway AutoScaling v2}}}
+          \resumeItem{Network Performance Monitoring}
+          {Developed a working solution from Microsoft Research Paper which includes implementation of an algorithm to discover all the possible network paths \& measure the health of those paths in near Real time.
+          \\ Link: \href{https://docs.microsoft.com/en-us/azure/azure-monitor/insights/network-performance-monitor}{\custombold{//Network Performance Monitor}}}
+          \resumeItem{Express Route Monitoring}
+          {Extended Network Performance Monitoring solution for the monitoring of network traffic across Express Route in Azure in both public and private peering.
+          \\ Link: \href{https://docs.microsoft.com/en-us/azure/expressroute/how-to-npm}{\custombold{//Network Performance Monitoring for Express Route}}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Coding Blocks}{New Delhi, India}
+      {C++ Algo Instructor \& Competitive Coding Mentor}{Septermber 2016 - June 2017}
+      \resumeItemListStart
+        \resumeItem{Advanced Data Structures \& Algorithms}
+          {Taught advanced data structure and algorithm course with a class size of 50 students in Coding Blocks Dwarka Centre.}
+        \resumeItem{Problem Setter}
+          {Designed more than 100 problems for coding blocks online platform }
+        \resumeItem{Competitive Coding Bootcamp}
+          {Conducted 3 competitive coding bootcamps teaching introductory advanced topics to around 500 students and compiled a booklet on a variety of topics.Co-authored a book on basics of competitive programming available at Amazon.
+          \\ Link: \href{https://www.amazon.in/Mastering-Competitive-Programming-Coding-Blocks/dp/8193754301}{\custombold{//Mastering Competitive Programming Book}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsoft}{Hyderabad, India}
+      {Software Engineering Intern}{Jun 2016 – July 2016}
+      \resumeItemListStart
+        \resumeItem{System Center Operations Manager}
+          {Enabled Management Server and Agent communication across untrusted boundaries using Gateway Servers. Simulated and tested the monitoring of IaaS Virtual Machines in the Enterprise Domain by creating virtual networks in Azure using present SCOM components. Used Azure Powershell for automation, currently used by SCOM team to deploy and test changes.
+          \\ Awarded full time Pre Placement Offer for the contributions during the internship.
+          \\ Link: \href{https://social.technet.microsoft.com/wiki/contents/articles/51554.scom-2016-integration-with-operations-management-suite-oms.aspx}{\custombold{//SCOM Integration with Operations Management Suite (OMS)}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delhi Technological University}{New Delhi, India}
+      {Bachelor of Technology in Mathematics and Computer Science;  GPA: 4.0 (8.75/10.0)}{Aug. 2013 -- June. 2017}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Dancing Link Algorithm-X}
+      {Algo-X via Dancing Links to solve sudoku by transforming it to Exact Cover Problem}
+      \resumeSubItem{Flow Chart Automation}
+      {Transform rough figures to properly shaped canvas Flow Chart with equal dimensions}
+    \resumeSubItem{Web crawler}
+      {Create pretty website link map by crawling a specific domain}
+    \resumeSubItem{Webcam Sudoku Puzzle Solver}
+      {Scan and solve Sudoku from image/webcam using openCV and numpy in python. Digits were recognized via an OCR engine implemented using KNN.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+   \resumeSubItem{Programming}
+      {C, C++(STL \& Boost), C\#, Python, Go, Javascript, Lua, Powershell}
+      \resumeSubItem{Technologies}
+      {Azure, AWS, Windows, Linux, HyperV, VStudio, WireShark, Bash, Nginx, WinDbg, Apache}
+      \resumeSubItem{Competitive Coding}
+      5 Star Coder@ Codechef {\href{https://codechef.com/users/code_zilla}{\custombold{(//code\_zilla))}}, Expert@ Codeforces \href{https://codechef.com/users/code_zilla}{\custombold{(//al\_chemist))}}
+      }
+  \resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
